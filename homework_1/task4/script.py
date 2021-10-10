@@ -1,4 +1,5 @@
 import cv2
+from skimage import io
 
 camera = cv2.VideoCapture(0)
 
@@ -20,6 +21,5 @@ while True:
 
     if cv2.waitKey(1) == ord('q'):
         break
-
 camera.release()
 cv2.destroyAllWindows()
